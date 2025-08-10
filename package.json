@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "hono-node src/index.ts"
+    "dev": "tsx src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.2.1",
+    "tsx": "^4.20.3",
     "typescript": "^5.9.2"
   }
 }
