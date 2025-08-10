@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_iHdh6hrasH
+createdAt: 2025-08-10T01:59:52.543181
+updatedAt: 2025-08-10T01:59:52.543182
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Refurb SteamDeck Tracker
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0

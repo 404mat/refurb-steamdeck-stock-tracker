@@ -39,7 +39,23 @@ pnpm dev
 
 The server will start on port 3000.
 
-### API Endpoint
+### API Endpoints
+
+#### `GET /ping`
+
+A simple endpoint to check if the server is running. It returns a `pong` response.
+
+**Example Request**:
+
+```bash
+curl http://localhost:3000/ping
+```
+
+**Example Response**:
+
+```
+pong
+```
 
 #### `GET /api/stock/:model`
 

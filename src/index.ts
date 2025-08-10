@@ -13,6 +13,10 @@ const steamDeckModels = {
 
 type SteamDeckModel = keyof typeof steamDeckModels;
 
+app.get("/ping", (c) => {
+  return c.text("pong");
+});
+
 app.get("/api/stock/:model", async (c) => {
   const model = c.req.param("model") as SteamDeckModel;
   const packageid = steamDeckModels[model];

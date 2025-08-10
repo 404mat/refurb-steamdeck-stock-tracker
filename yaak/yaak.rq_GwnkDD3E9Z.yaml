@@ -1,0 +1,26 @@
+type: http_request
+model: http_request
+id: rq_GwnkDD3E9Z
+createdAt: 2025-08-10T02:00:01.809553
+updatedAt: 2025-08-10T02:14:16.819863
+workspaceId: wk_iHdh6hrasH
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Stock Status
+sortPriority: 1000.0
+url: http://localhost:3000/api/stock/oled_512
+urlParameters:
+- enabled: true
+  name: country
+  value: CA
+  id: 3STCYMii0y
+- enabled: true
+  name: ''
+  value: ''
+  id: W6f8yZZsIm
