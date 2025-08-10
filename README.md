@@ -4,7 +4,7 @@ This project provides a simple API to check the availability of refurbished Stea
 
 ## 🚀 Features
 
-- Exposes a single API endpoint to check stock status using user-friendly model names.
+- Exposes API endpoints to check stock status using user-friendly model names.
 - Built with Hono.js for high performance.
 - Written in TypeScript.
 
@@ -35,6 +35,20 @@ To start the development server, run:
 
 ```bash
 pnpm dev
+```
+
+### Building and Running with Docker
+
+To build the Docker image, run:
+
+```bash
+docker build -t refurb-steamdeck-stock-tracker .
+```
+
+To run the container:
+
+```bash
+docker run -p 3000:3000 refurb-steamdeck-stock-tracker
 ```
 
 The server will start on port 3000.
@@ -81,15 +95,6 @@ curl http://localhost:3000/api/stock/oled_512?country=US
 }
 ```
 
-**Error Response (Invalid Model)**:
-
-```json
-{
-  "error": "Invalid model specified.",
-  "available_models": ["lcd_64", "lcd_256", "lcd_512", "oled_512", "oled_1tb"]
-}
-```
-
 ### Available Models
 
 - `lcd_64`
@@ -97,7 +102,3 @@ curl http://localhost:3000/api/stock/oled_512?country=US
 - `lcd_512`
 - `oled_512`
 - `oled_1tb`
-
-## 📜 License
-
-This project is licensed under the ISC License.

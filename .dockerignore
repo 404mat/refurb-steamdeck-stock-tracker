@@ -1,0 +1,14 @@
+# Git
+.git
+.gitignore
+
+# Node
+node_modules
+pnpm-debug.log*
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Other
+README.md
